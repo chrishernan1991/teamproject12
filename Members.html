@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+	<style>
+		body {
+			background-image: url("images/greatimagex.jpg");
+			}
+		img {
+			width:20%;
+			height:20%;
+			}
+	</style>
+
+<div class="navbar">
+ 
+  <a href="Members.html">Members</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>MENU</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3></h3>
+		  <a href="pictures.html">Buy a vehicle</a>
+		  <a href="getmoreinfo.html">GET MORE INFO</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        
+       
+        <div class="column">
+          <h3></h3>
+          
+        <a class="btn" href="http://play.google.com">Download JILLIPOP</a>
+          <a href="about.html">About Us</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+	  
+	<h2>Already a member LOG IN!</h2>
+	 <!--login-->
+	<h2>Jillypop Login Form</h2>
+
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+	<div id="id01" class="modal">
+  
+	<form class="modal-content animate" action="/action_page.php">
+		<div class="imgcontainer">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			
+		</div>
+			<fieldset class="text" id="fs1">
+			<div class="container">
+			<label><b>Username</b></label>
+			<br><input type="text" placeholder="Enter Username" name="uname" required><br>
+
+			<label><b>Password</b></label>
+			<br><input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+			<br><button type="submit">Login</button><br>
+			<input type="checkbox" checked="checked"> Remember me
+		</fieldset>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+			</form>
+		</div>
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == Jillipop) {
+        modal.style.display = "none";
+		}
+	}
+</script>
+			
+	<article>
+      <h2>Sign Up</h2>
+      
+      <div class="trail">
+         <div class="currentPage">Become a member now!</div>
+         <div class="otherPage">Just complete the form below with your information!</div>
+      </div>
+	 
+
+      <form action="order2.htm" autocomplete="on">
+         <fieldset class="text" id="fs1">
+            <label for="name">Name</label>
+            <br><input type="text" id="name" name="name" /><br>
+            <label for="email">Email</label>
+            <br><input type="email" id="email" name="email" /><br>
+            <label for="phone">Phone</label>
+            <br><input type="tel" id="phone" name="phone" /><br>
+         </fieldset>
+         <fieldset class="text">
+            <label for="address">Address</label>
+            <br><br><input type="text" id="address" name="address" /><br>
+            <label for="city">City</label>
+            <br><input type="text" id="city" name="city" /><br>
+            <label for="state" id="stateLabel">State</label>
+            <br><input type="text" id="state" name="state" /><br>
+            <label for="zip">Zip</label>
+            <br><input type="text" id="zip" name="zip" /><br>
+         </fieldset>
+         <fieldset class="btn">
+            <input type="submit" id="nextBtn" value="Next &gt;" />
+         </fieldset>
+      </form>
+   </article>
+   
+
+</body>
+</html>	
